@@ -1,0 +1,37 @@
+.info {
+  padding: 120px 0;
+  background: var(--dark);
+  color: var(--light);
+
+  &__container {
+    display: grid;
+    gap: 190px;
+  }
+
+  &__text {
+    display: grid;
+    gap: 50px;
+
+    &:nth-child(2) {
+      h2 {
+        span {
+          font-size: 100px;
+        }
+      }
+    }
+
+    h2 {
+      font-weight: 800;
+      font-size: 200px;
+      line-height: 90%;
+      letter-spacing: -4px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 140%;
+      letter-spacing: -2px;
+    }
+  }
+}

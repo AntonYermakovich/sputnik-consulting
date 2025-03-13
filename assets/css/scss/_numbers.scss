@@ -1,0 +1,32 @@
+.numbers {
+  padding: 150px 0 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &__item {
+    background: var(--dark);
+    color: var(--light);
+    border-radius: 16px;
+    display: grid;
+    gap: 100px;
+    padding: 20px 50px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 114px;
+      line-height: 90%;
+      letter-spacing: -2px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 130%;
+      letter-spacing: -1px;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.chance {
+  padding: 120px 0;
+  overflow-x: hidden;
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__block {
+      padding: 80px;
+      background: var(--light);
+      border-radius: 16px;
+      display: grid;
+      gap: 80px;
+      position: relative;
+
+      h3 {
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 100%;
+        letter-spacing: -3px;
+        max-width: 880px;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: -1px;
+
+        &.third {
+          max-width: 690px;
+        }
+      }
+
+      .circle {
+        position: absolute;
+        top: 15%;
+        left: 865px;
+      }
+
+      &_red {
+        background: #f13d40;
+        color: var(--light);
+
+        .icon {
+          background: #cb2a2d;
+        }
+      }
+
+      &_green {
+        background: #44b759;
+        color: var(--light);
+
+        .icon {
+          background: #2d7a3b;
+        }
+      }
+
+      h2 {
+        font-weight: 800;
+        font-size: 200px;
+        line-height: 90%;
+        letter-spacing: -4px;
+      }
+    }
+
+    &__list {
+      display: grid;
+      gap: 45px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      .icon {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 140%;
+        letter-spacing: -1px;
+      }
+    }
+  }
+}

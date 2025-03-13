@@ -1,0 +1,52 @@
+.formats {
+  padding: 150px 0 0;
+
+  &__list {
+    display: grid;
+    gap: 20px;
+  }
+
+  &__item {
+    background: var(--light);
+    border-radius: 16px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 430px 1fr;
+    position: relative;
+    height: 240px;
+    padding: 0 80px;
+    gap: 30px;
+
+    &:hover {
+      .arrow__icon {
+        stroke: var(--primary-color);
+        stroke-opacity: 1;
+        top: 10px;
+        right: 10px;
+      }
+    }
+
+    .arrow__icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      stroke: #161616;
+      stroke-opacity: 0.1;
+      transition: .3s;
+    }
+
+    h2 {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: -2px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: -1px;
+    }
+  }
+}

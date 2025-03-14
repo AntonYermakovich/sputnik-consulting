@@ -34,6 +34,15 @@
           </ul>
 
           <a href="#contacts" class="btn-mobile">Оставить заявку</a>
+
+          <ul class="menu__mobile">
+            <li><a href="#">Кому мы нужны</a></li>
+            <li><a href="#goal">Цель </a></li>
+            <li><a href="#info">Цифры</a></li>
+            <li><a href="#numbers">Результаты</a></li>
+            <li><a href="#formats">Сотрудничество</a></li>
+            <li><a href="#chance">Формат</a></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -93,7 +102,12 @@
                 аспирантуры, которые готовы развивать собственную бизнес-идею,
                 обладающую перспективой коммерциализации.
               </p>
-              <a href="#contacts" data-aos="zoom-in" data-aos-delay="600" class="btn">
+              <a
+                href="#contacts"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+                class="btn"
+              >
                 <img src="./assets/img/hero/arrow-right.png" alt="Icon" />
                 <span>Оставить заявку</span>
               </a>
@@ -147,7 +161,10 @@
 
     <section class="formats" id="formats">
       <div class="formats__container container">
-        <h2 data-aos="fade-up" class="title">Форматы <br /> сотрудничества</h2>
+        <h2 data-aos="fade-up" class="title">
+          Форматы <br />
+          сотрудничества
+        </h2>
 
         <div class="formats__list">
           <div data-aos="zoom-in" class="formats__item">
@@ -279,19 +296,19 @@
 
     <section class="contacts" id="contacts">
       <div class="contacts__container container">
-        <form class="form">
+        <form class="form" id="form">
           <div class="form__field">
             <input type="text" id="name" placeholder=" " />
             <label for="name">Имя</label>
           </div>
 
           <div class="form__field">
-            <input type="text" id="telegram" placeholder="" />
+            <input type="text" id="telegram" placeholder=" " />
             <label for="telegram">@Телеграм</label>
           </div>
 
           <div class="form__actions">
-            <button type="button">Оставить заявку</button>
+            <button>Оставить заявку</button>
             <p>
               нажимая «оставить заявку», я соглашаюсь с
               <span>политикой конфиденциальности</span>
@@ -320,13 +337,20 @@
       </div>
     </section>
 
-    <script src="./assets/js/app.js"></script>
+    <div class="overlay"></div>
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__thx">
+        <img src="./assets/img/success.png" alt="Success">
+        <h2>Ваша заявка отправлена</h2>
+        <p>Наши специалисты скоро с вами свяжутся!</p>
+        <button>Ок</button>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 120,
-        once: true,
-      });
-    </script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>

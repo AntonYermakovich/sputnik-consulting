@@ -106,11 +106,15 @@
     max-width: 768px;
   }
   .header__icon,
-  .header .btn-mobile {
+  .header .btn-mobile{
     display: block;
   }
   .header .menu {
     display: none;
+  }
+
+  .header .menu__mobile {
+    display: flex;
   }
 
   .hero__actions {
@@ -157,7 +161,7 @@
 
       p {
         max-width: 100%;
-        letter-spacing: 0px;
+        letter-spacing: -1px;
         font-size: 24px;
       }
 

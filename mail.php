@@ -24,7 +24,7 @@ try {
   $mail->SMTPAuth   = true;
 
   // Настройки почты отправителя
-  $mail->Host       = 'smtp.yandex.com'; // SMTP сервера вашей почты
+  $mail->Host       = 'smtp.yandex.com'; // SMTP сервера вашей почты  
   $mail->Username   = 'anton.yermakovich@yandex.by'; // Логин на почте
   $mail->Password   = 'lqtvqutkztrmxror'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
@@ -33,7 +33,7 @@ try {
   $mail->setFrom('anton.yermakovich@yandex.by', 'Заявка с сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('rycoka5@mail.ru', 'info@sputnik.software');
+  $mail->addAddress('info@sputnik.software' ); // 'info@sputnik.software'
 
   // Отправка сообщения
   $mail->isHTML(true);

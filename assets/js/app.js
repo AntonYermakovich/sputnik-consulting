@@ -42,56 +42,28 @@ function closeMenu() {
   overlay.classList.remove("overlay_show");
 }
 
-// validate form
-const validator = new JustValidate("#form");
-validator
-  .addField("#name", [
-    {
-      rule: "required",
-      errorMessage: "Введите ваше имя",
-    },
-    {
-      rule: "minLength",
-      value: 2,
-      errorMessage: "Минимальная длина имени 2 символа",
-    },
-  ])
-  .addField("#telegram", [
-    {
-      rule: "required",
-      errorMessage: "Введите ваш телеграм",
-    },
-  ]);
-
 // Send message
 document.querySelector("#form").addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  if (validator.isValid) {
-    const formData = {
-      name: e.target.name.value,
-      telegram: e.target.telegram.value,
-    };
+  const formData = {
+    name: e.target.name.value,
+    telegram: e.target.telegram.value,
+  };
 
-    await fetch("mail.php", {
-      method: "POST",
-      body: JSON.stringify(formData),
-    });
+  await fetch("mail.php", {
+    method: "POST",
+    body: JSON.stringify(formData),
+  });
 
-    modalThx.classList.add("modal_show");
-    modalThx.addEventListener("click", (e) => {
-      if (
-        e.target.classList.contains("modal__overlay") ||
-        e.target.tagName === "BUTTON"
-      ) {
-        modalThx.classList.remove("modal_show");
-      }
-    });
-    e.target.reset();
-  }
-});
-
-AOS.init({
-  offset: 120,
-  once: true,
+  modalThx.classList.add("modal_show");
+  modalThx.addEventListener("click", (e) => {
+    if (
+      e.target.classList.contains("modal__overlay") ||
+      e.target.tagName === "BUTTON"
+    ) {
+      modalThx.classList.remove("modal_show");
+    }
+  });
+  e.target.reset();
 });

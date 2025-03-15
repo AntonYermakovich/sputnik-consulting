@@ -182,7 +182,7 @@
   }
 
   .info {
-    padding: 60px 0;
+    padding: 100px 0 60px;
   }
   .info__text {
     gap: 20px;
@@ -210,7 +210,7 @@
   }
 
   .formats {
-    padding: 40px 0 0;
+    padding: 80px 0 0;
   }
 
   .formats__item {
@@ -294,6 +294,7 @@
 
     p {
       font-size: 16px;
+      max-width: 280px;
     }
 
     a {
@@ -346,7 +347,7 @@
   }
 
   .numbers {
-    padding: 32px 0 0;
+    padding: 90px 0 0;
   }
 
   .numbers__container {
@@ -354,7 +355,7 @@
   }
 
   .formats {
-    padding: 40px 0 0;
+    padding: 100px 0 0;
 
     &__item {
       height: auto;

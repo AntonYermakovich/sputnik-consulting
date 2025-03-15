@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-margin-top: 5rem;
+  scroll-margin-top: 80px;
 }
 
 html {
@@ -710,7 +710,7 @@ section {
     font-size: 60px;
   }
   .hero__item:first-child p {
-    max-width: 520px;
+    max-width: 500px;
     letter-spacing: -1px;
   }
   .hero__rocket {
@@ -827,7 +827,7 @@ section {
   }
   .hero__item:first-child p {
     max-width: 100%;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     font-size: 24px;
   }
   .hero__item:first-child a {
@@ -843,7 +843,7 @@ section {
     position: inherit;
   }
   .info {
-    padding: 100px 0 60px;
+    padding: 60px 0;
   }
   .info__text {
     gap: 20px;
@@ -862,7 +862,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
   .formats {
-    padding: 80px 0 0;
+    padding: 40px 0 0;
   }
   .formats__item {
     display: flex;
@@ -969,13 +969,13 @@ section {
     letter-spacing: normal;
   }
   .numbers {
-    padding: 90px 0 0;
+    padding: 32px 0 0;
   }
   .numbers__container {
     grid-template-columns: repeat(1, 1fr);
   }
   .formats {
-    padding: 100px 0 0;
+    padding: 40px 0 0;
   }
   .formats__item {
     height: auto;

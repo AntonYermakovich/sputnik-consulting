@@ -12,7 +12,7 @@
       font-size: 60px;
     }
     p {
-      max-width: 520px;
+      max-width: 500px;
       letter-spacing: -1px;
     }
   }
@@ -161,7 +161,7 @@
 
       p {
         max-width: 100%;
-        letter-spacing: -1px;
+        letter-spacing: -2px;
         font-size: 24px;
       }
 
@@ -182,7 +182,7 @@
   }
 
   .info {
-    padding: 100px 0 60px;
+    padding: 60px 0;
   }
   .info__text {
     gap: 20px;
@@ -210,7 +210,7 @@
   }
 
   .formats {
-    padding: 80px 0 0;
+    padding: 40px 0 0;
   }
 
   .formats__item {
@@ -347,7 +347,7 @@
   }
 
   .numbers {
-    padding: 90px 0 0;
+    padding: 32px 0 0;
   }
 
   .numbers__container {
@@ -355,7 +355,7 @@
   }
 
   .formats {
-    padding: 100px 0 0;
+    padding: 40px 0 0;
 
     &__item {
       height: auto;

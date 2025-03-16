@@ -87,3 +87,11 @@ section {
     visibility: visible;
   }
 }
+
+.nowrap {
+  white-space: nowrap;
+}
+
+section {
+  overflow-y: hidden;
+}

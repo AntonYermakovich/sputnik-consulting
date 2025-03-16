@@ -58,7 +58,7 @@
               Грантовая поддержка – одна из лучших возможностей для старта
               бизнеса. Мы помогаем предпринимателям получить безвозмездное
               финансирование в размере
-              <span class="text-primary">1 000 000 рублей</span> от Фонда
+              <span class="text-primary nowrap">1 000 000 рублей</span> от Фонда
               Содействия Инновациям в рамках гранта “Студенческий стартап”.
             </p>
             <img
@@ -72,7 +72,7 @@
             </a>
           </div>
 
-          <div class="hero__item">
+          <div class="hero__item hero__item-two">
             <h2>
               <span class="text-primary">Sputnik Consulting</span> – это команда
               специалистов с многолетним опытом в работе с государственными
@@ -87,7 +87,7 @@
             </p>
           </div>
 
-          <div class="hero__item" id="goal">
+          <div class="hero__item hero__item-three" id="goal">
             <h2>
               Сделать университеты местом запуска стартапов,
               <span class="text-primary">стимулировать</span> молодежное
@@ -114,21 +114,19 @@
     <section class="info" id="info">
       <div class="info__container container">
         <div class="info__text">
-          <h2 data-aos="fade-up">4500</h2>
-          <p data-aos="fade-left">
+          <h2>4500</h2>
+          <p>
             Призовых мест было распределено <br />
             с 2022 по 2024 годы.
           </p>
         </div>
         <div class="info__text">
-          <h2 data-aos="fade-up"><span>по</span> 1 000 000₽</h2>
-          <p data-aos="fade-left">
-            Получил каждый победитель на создание <br />стартап-проекта.
-          </p>
+          <h2><span>по</span> 1 000 000₽</h2>
+          <p>Получил каждый победитель на создание <br />стартап-проекта.</p>
         </div>
         <div class="info__text">
-          <h2 data-aos="fade-up">2500</h2>
-          <p data-aos="fade-left">
+          <h2>2500</h2>
+          <p>
             Победителей будет определено <br />
             на грантовое финансирование в 2025 году.
           </p>
@@ -138,17 +136,17 @@
 
     <section class="numbers" id="numbers">
       <div class="numbers__container container">
-        <div data-aos="fade-right" class="numbers__item">
+        <div class="numbers__item">
           <h2>22</h2>
           <p>Заявки подали в прошлом году.</p>
         </div>
 
-        <div data-aos="zoom-in" data-aos-delay="400" class="numbers__item">
+        <div class="numbers__item">
           <h2>18</h2>
           <p>Заявок стали победными.</p>
         </div>
 
-        <div data-aos="fade-left" data-aos-delay="800" class="numbers__item">
+        <div class="numbers__item">
           <h2>17</h2>
           <p> it-продуктов разработали для грантополучателей.</p>
         </div>
@@ -157,13 +155,13 @@
 
     <section class="formats" id="formats">
       <div class="formats__container container">
-        <h2 data-aos="fade-up" class="title">
+        <h2 class="title">
           Форматы <br />
           сотрудничества
         </h2>
 
         <div class="formats__list">
-          <a href="#contacts" data-aos="zoom-in" class="formats__item">
+          <a href="#contacts" class="formats__item formats__item-1">
             <h2>
               Подготовка <br />
               заявки на грант
@@ -176,7 +174,7 @@
               <use href="./sprites.svg#formats__arrow"></use>
             </svg>
           </a>
-          <a href="#contacts" data-aos="zoom-in" class="formats__item">
+          <a href="#contacts" class="formats__item formats__item-2">
             <h2>
               Помощь c технической <br />
               реализацией проекта
@@ -189,7 +187,7 @@
               <use href="./sprites.svg#formats__arrow"></use>
             </svg>
           </a>
-          <a href="#contacts" data-aos="zoom-in" class="formats__item">
+          <a href="#contacts" class="formats__item formats__item-3">
             <h2>
               Юридическое <br />
               сопровождение <br />
@@ -348,38 +346,160 @@
 
     <script>
       // Header
-      if (window.innerWidth < 1025) {
-        gsap
-          .timeline()
-          .from(".header__container", { opacity: 0 })
-          .from(".header__icon", { opacity: 0, scale: 0, ease: "bounce" })
-          .from(".header__logo", { opacity: 0, scale: 0, ease: "back" })
-          .fromTo(
-            ".header__container a.btn-mobile",
-            { opacity: 0 },
-            { opacity: 1 }
-          );
-      } else {
-        gsap
-          .timeline()
-          .from(".header__container", { opacity: 0 })
-          .from(".menu__left li", { opacity: 0, stagger: 0.3 })
-          .from(".header__logo", { opacity: 0, scale: 0, ease: "back" })
-          .from(".menu__right li", { opacity: 0, stagger: 0.3 });
-      }
+      // if (window.innerWidth < 1025) {
+      //   gsap
+      //     .timeline()
+      //     .from(".header__container", { opacity: 0 })
+      //     .from(".header__icon", { opacity: 0, scale: 0, ease: "bounce" })
+      //     .from(".header__logo", { opacity: 0, scale: 0, ease: "back" })
+      //     .fromTo(
+      //       ".header__container a.btn-mobile",
+      //       { opacity: 0 },
+      //       { opacity: 1 }
+      //     );
+      // } else {
+      //   gsap
+      //     .timeline()
+      //     .from(".header__container", { opacity: 0 })
+      //     .from(".menu__left li", { opacity: 0, stagger: 0.3 })
+      //     .from(".header__logo", { opacity: 0, scale: 0, ease: "back" })
+      //     .from(".menu__right li", { opacity: 0, stagger: 0.3 });
+      // }
 
-      // Hero 
-      gsap
-        .timeline({ duration: 3.5 })
-        .from(".hero__item.hero__item_bg", { opacity: 0, x: 100 })
-        .from(".hero__item.hero__item_bg h1", { opacity: 0, y: 100 })
-        .from(".hero__item.hero__item_bg p", { opacity: 0, y: 100 })
-        .from(".hero__item.hero__item_bg .hero__rocket", { opacity: 0 })
-        .fromTo(
-          ".hero__item.hero__item_bg a",
-          { opacity: 0, y: 100, x: 100 },
-          { opacity: 1, y: 0, x: 0 }
+      // // Hero
+      // gsap
+      //   .timeline({ duration: 2 })
+      //   .from(".hero__item.hero__item_bg", { opacity: 0, x: 100 })
+      //   .from(".hero__item.hero__item_bg h1", { opacity: 0, y: 100 })
+      //   .from(".hero__item.hero__item_bg p", { opacity: 0, y: 100 })
+      //   .from(".hero__item.hero__item_bg .hero__rocket", { opacity: 0 })
+      //   .fromTo(
+      //     ".hero__item.hero__item_bg a",
+      //     { opacity: 0, y: 100, x: 100 },
+      //     { opacity: 1, y: 0, x: 0 }
+      //   );
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.from(".hero__item-two h2", {
+        scrollTrigger: {
+          trigger: ".hero__item-two",
+          start: "-200 50%",
+        },
+        y: 100,
+        autoAlpha: 0,
+        duration: 0.5,
+      });
+
+      gsap.from(".hero__item-two p", {
+        scrollTrigger: {
+          trigger: ".hero__item-two",
+          start: "40% 70%",
+        },
+        y: 100,
+        autoAlpha: 0,
+        duration: 0.5,
+      });
+
+      gsap.from(".hero__item-three h2", {
+        scrollTrigger: {
+          trigger: ".hero__item-three",
+          start: "-200 50%",
+        },
+        y: 100,
+        autoAlpha: 0,
+        duration: 0.5,
+      });
+
+      gsap.from(".hero__item-three p", {
+        scrollTrigger: {
+          trigger: ".hero__item-three",
+          start: "40% 70%",
+        },
+        y: 100,
+        autoAlpha: 0,
+        duration: 0.5,
+      });
+
+      gsap.fromTo(
+        ".hero__item-three a.btn",
+        { opacity: 0 },
+        {
+          scrollTrigger: {
+            trigger: ".hero__item-three",
+            start: "40% 70%",
+          },
+          opacity: 1,
+        }
+      );
+
+      const itemsText = gsap.utils.toArray(".info .info__text");
+      itemsText.forEach((item) => {
+        gsap.fromTo(
+          item,
+          { opacity: 0, y: 200 },
+          {
+            opacity: 1,
+            y: 0,
+            scrollTrigger: {
+              trigger: item,
+              scrub: true,
+              start: "top 80%",
+              end: "bottom center",
+            },
+          }
         );
+      });
+
+      gsap.from(".numbers__item", {
+        scrollTrigger: {
+          trigger: ".numbers",
+          start: "20% 70%",
+        },
+        // y: 100,
+        scale: 0,
+        autoAlpha: 0,
+        duration: 0.5,
+        stagger: 0.25,
+      });
+
+      gsap.from("h2.title", {
+        scrollTrigger: {
+          trigger: ".formats",
+          start: "100 80%"
+        },
+        y: 100,
+        autoAlpha: 0,
+        duration: 0.5
+      });
+
+      gsap.from(".formats .formats__item-1", {
+        scrollTrigger: {
+          trigger: ".formats",
+          start: "400 70%"
+        },
+        y: 100,
+        autoAlpha: 0,
+        duration: 0.5
+      });
+
+      gsap.from(".formats .formats__item-2", {
+        scrollTrigger: {
+          trigger: ".formats",
+          start: "700 70%"
+        },
+        y: 100,
+        autoAlpha: 0,
+        duration: 0.5
+      });
+
+      gsap.from(".formats .formats__item-3", {
+        scrollTrigger: {
+          trigger: ".formats",
+          start: "900 70%"
+        },
+        y: 100,
+        autoAlpha: 0,
+        duration: 0.5
+      });
     </script>
   </body>
 </html>

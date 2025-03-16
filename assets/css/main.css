@@ -89,6 +89,14 @@ section {
   visibility: visible;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
+section {
+  overflow-y: hidden;
+}
+
 .header {
   position: sticky;
   top: 20px;
@@ -827,7 +835,7 @@ section {
   }
   .hero__item:first-child p {
     max-width: 100%;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     font-size: 24px;
   }
   .hero__item:first-child a {
@@ -930,7 +938,6 @@ section {
   }
   .hero__item:first-child p {
     font-size: 16px;
-    max-width: 280px;
   }
   .hero__item:first-child a {
     bottom: -270px;

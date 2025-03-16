@@ -207,14 +207,14 @@
 
     <section class="chance">
       <div class="chance__container container">
-        <h2 data-aos="fade-up" class="title">
+        <h2 class="title">
           Повысим ваши шансы <br />
           получить грант
         </h2>
 
         <div class="group">
-          <div data-aos="fade-up" class="group__block group__block_red">
-            <h2 data-aos="fade-up">Без нас</h2>
+          <div class="group__block group__block_red">
+            <h2>Без нас</h2>
             <div class="group__list">
               <div class="group__item">
                 <div class="icon">
@@ -265,7 +265,7 @@
               </div>
             </div>
           </div>
-          <div class="group__block" id="chance">
+          <div class="group__block group__block_white" id="chance">
             <h3>Мы работаем по системе гонорара успеха</h3>
             <p class="third">
               Данная система используется во всех современных фирмах мира, и мы
@@ -435,7 +435,7 @@
       itemsText.forEach((item) => {
         gsap.fromTo(
           item,
-          { opacity: 0, y: 200 },
+          { opacity: 0, y: 100 },
           {
             opacity: 1,
             y: 0,
@@ -454,7 +454,6 @@
           trigger: ".numbers",
           start: "20% 70%",
         },
-        // y: 100,
         scale: 0,
         autoAlpha: 0,
         duration: 0.5,
@@ -464,41 +463,137 @@
       gsap.from("h2.title", {
         scrollTrigger: {
           trigger: ".formats",
-          start: "100 80%"
+          start: "100 80%",
         },
         y: 100,
         autoAlpha: 0,
-        duration: 0.5
+        duration: 0.5,
       });
 
       gsap.from(".formats .formats__item-1", {
         scrollTrigger: {
           trigger: ".formats",
-          start: "400 70%"
+          start: "30% 70%",
         },
         y: 100,
         autoAlpha: 0,
-        duration: 0.5
+        duration: 0.5,
       });
 
       gsap.from(".formats .formats__item-2", {
         scrollTrigger: {
           trigger: ".formats",
-          start: "700 70%"
+          start: "50% 70%",
         },
         y: 100,
         autoAlpha: 0,
-        duration: 0.5
+        duration: 0.5,
       });
 
       gsap.from(".formats .formats__item-3", {
         scrollTrigger: {
           trigger: ".formats",
-          start: "900 70%"
+          start: "70% 70%",
         },
         y: 100,
         autoAlpha: 0,
-        duration: 0.5
+        duration: 0.5,
+      });
+
+      gsap.from(".group__block_red", {
+        scrollTrigger: {
+          trigger: ".group__block_red",
+          start: "100 80%",
+        },
+        opacity: 0,
+        x: 100,
+      });
+
+      gsap.from(".group__block_red h2", {
+        scrollTrigger: {
+          trigger: ".group__block_red",
+          start: "150 80%",
+        },
+        opacity: 0,
+        y: 100,
+      });
+
+      gsap.from(".group__block_red .group__item", {
+        scrollTrigger: {
+          trigger: ".group__block_red",
+          start: "center 70%",
+        },
+        autoAlpha: 0,
+        y: 100,
+        stagger: 0.25,
+      });
+
+      gsap.from(".group__block_green", {
+        scrollTrigger: {
+          trigger: ".group__block_green",
+          start: "100 80%",
+        },
+        opacity: 0,
+        x: 100,
+      });
+
+      gsap.from(".group__block_green h2", {
+        scrollTrigger: {
+          trigger: ".group__block_green",
+          start: "150 80%",
+        },
+        opacity: 0,
+        y: 100,
+      });
+
+      gsap.from(".group__block_green .group__item", {
+        scrollTrigger: {
+          trigger: ".group__block_green",
+          start: "center 70%",
+        },
+        autoAlpha: 0,
+        y: 100,
+        stagger: 0.25,
+      });
+
+      gsap.from(".group__block_white", {
+        scrollTrigger: {
+          trigger: ".group__block_white",
+          start: "100 80%",
+        },
+        opacity: 0,
+        x: 100,
+      });
+
+      gsap.from(".group__block_white h3", {
+        scrollTrigger: {
+          trigger: ".group__block_white",
+          start: "200 80%",
+        },
+        autoAlpha: 0,
+        y: 100,
+      });
+
+      gsap.from(".group__block_white p", {
+        scrollTrigger: {
+          trigger: ".group__block_white",
+          start: "center 80%",
+        },
+        autoAlpha: 0,
+        y: 100,
+        duration: .5
+      });
+
+      gsap.from(".group__block_white img", {
+        scrollTrigger: {
+          trigger: ".group__block_white",
+          start: "center 80%",
+        },
+        opacity: 0,
+        scale: 0,
+        ease: "bounce",
+        duration: 2,
+        delay: .6
       });
     </script>
   </body>

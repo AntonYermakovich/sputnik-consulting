@@ -346,38 +346,35 @@
 
     <script>
       // Header
-      // if (window.innerWidth < 1025) {
-      //   gsap
-      //     .timeline()
-      //     .from(".header__container", { opacity: 0 })
-      //     .from(".header__icon", { opacity: 0, scale: 0, ease: "bounce" })
-      //     .from(".header__logo", { opacity: 0, scale: 0, ease: "back" })
-      //     .fromTo(
-      //       ".header__container a.btn-mobile",
-      //       { opacity: 0 },
-      //       { opacity: 1 }
-      //     );
-      // } else {
-      //   gsap
-      //     .timeline()
-      //     .from(".header__container", { opacity: 0 })
-      //     .from(".menu__left li", { opacity: 0, stagger: 0.3 })
-      //     .from(".header__logo", { opacity: 0, scale: 0, ease: "back" })
-      //     .from(".menu__right li", { opacity: 0, stagger: 0.3 });
-      // }
+      if (window.innerWidth < 1025) {
+        gsap
+          .timeline()
+          .from(".header__container", { opacity: 0 })
+          .from(".header__icon", { opacity: 0, scale: 0, ease: "bounce" })
+          .from(".header__logo", { opacity: 0, scale: 0, ease: "back" })
+          .fromTo(
+            ".header__container a.btn-mobile",
+            { opacity: 0 },
+            { opacity: 1 }
+          );
+      } else {
+        gsap
+          .timeline()
+          .from(".header__container", { opacity: 0 })
+          .from(".menu__left li", { opacity: 0, stagger: 0.3 })
+          .from(".header__logo", { opacity: 0, scale: 0, ease: "back" })
+          .from(".menu__right li", { opacity: 0, stagger: 0.3 });
+      }
 
-      // // Hero
-      // gsap
-      //   .timeline({ duration: 2 })
-      //   .from(".hero__item.hero__item_bg", { opacity: 0, x: 100 })
-      //   .from(".hero__item.hero__item_bg h1", { opacity: 0, y: 100 })
-      //   .from(".hero__item.hero__item_bg p", { opacity: 0, y: 100 })
-      //   .from(".hero__item.hero__item_bg .hero__rocket", { opacity: 0 })
-      //   .fromTo(
-      //     ".hero__item.hero__item_bg a",
-      //     { opacity: 0, y: 100, x: 100 },
-      //     { opacity: 1, y: 0, x: 0 }
-      //   );
+      // Hero
+      gsap
+        .timeline({ duration: 2 })
+        .from(".hero__item.hero__item_bg", { opacity: 0, x: 100 })
+        .from(".hero__item.hero__item_bg h1", { opacity: 0, y: 100 })
+        .from(".hero__item.hero__item_bg p", { opacity: 0, y: 100 })
+        .from(".hero__item.hero__item_bg .hero__rocket", { opacity: 0 })
+        .fromTo(".hero__item.hero__item_bg a", { opacity: 0 }, { opacity: 1 });
+
       gsap.registerPlugin(ScrollTrigger);
       gsap.from(".hero__item-two h2", {
         scrollTrigger: {
@@ -581,7 +578,7 @@
         },
         autoAlpha: 0,
         y: 100,
-        duration: .5
+        duration: 0.5,
       });
 
       gsap.from(".group__block_white img", {
@@ -593,7 +590,7 @@
         scale: 0,
         ease: "bounce",
         duration: 2,
-        delay: .6
+        delay: 0.6,
       });
     </script>
   </body>
